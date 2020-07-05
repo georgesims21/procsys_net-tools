@@ -552,7 +552,6 @@ static int arp_show(char *name)
     }
     /* Open the PROCps kernel table. */
     if ((fp = fopen(_PATH_PROCNET_ARP, "r")) == NULL) {
-        printf("_PATH_PROCNET_ARP: %s:", _PATH_PROCNET_ARP);
 	perror(_PATH_PROCNET_ARP);
 	return (-1);
     }
